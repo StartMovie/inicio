@@ -42,7 +42,7 @@
 			</div>
 
 			<div class="item">
-				<img src="img/Aladdin.jpg" alt="" class="item-img">
+				background-image: url('img/Aladdin.jpg');
 			</div>
 
 			<div class="item">
@@ -125,74 +125,5 @@
 				<img src="img/Venom carnage liberado.jpg" alt="" class="item-img">
 			</div>
 		</div>
-<?php
-/**
- * @link https://craftcms.com/
- * @copyright Copyright (c) Pixel & Tonic, Inc.
- * @license https://craftcms.github.io/license/
- */
-
-namespace craft\config;
-
-use Craft;
-use craft\helpers\ConfigHelper;
-use craft\helpers\Localization;
-use craft\helpers\StringHelper;
-use craft\services\Config;
-use yii\base\BaseObject;
-use yii\base\InvalidArgumentException;
-use yii\base\InvalidConfigException;
-use yii\base\UnknownPropertyException;
-
-/**
- * General config class
- *
- * @author Pixel & Tonic, Inc. <support@pixelandtonic.com>
- * @since 3.0.0
- */
-class GeneralConfig extends BaseObject
-{
-	    const IMAGE_DRIVER_AUTO = 'auto';
-	    const IMAGE_DRIVER_GD = 'gd';
-	    const IMAGE_DRIVER_IMAGICK = 'imagick';
-
-	    /**
-	     * @since 3.6.0
-	     */
-	    const CAMEL_CASE = 'camel';
-	    /**
-	     * @since 3.6.0
-	     */
-	    const PASCAL_CASE = 'pascal';
-	    /**
-	     * @since 3.6.0
-	     */
-	    const SNAKE_CASE = 'snake';
-
-	    private static $renamedSettings = [
-	        'activateAccountFailurePath' => 'invalidUserTokenPath',
-	        'allowAutoUpdates' => 'allowUpdates',
-	        'backupDbOnUpdate' => 'backupOnUpdate',
-	        'defaultFilePermissions' => 'defaultFileMode',
-	        'defaultFolderPermissions' => 'defaultDirMode',
-	        'enableGraphQlCaching' => 'enableGraphqlCaching',
-	        'environmentVariables' => 'aliases',
-	        'isSystemOn' => 'isSystemLive',
-	        'restoreDbOnUpdateFailure' => 'restoreOnUpdateFailure',
-	        'useWriteFileLock' => 'useFileLocks',
-	        'validationKey' => 'securityKey',
-	    ];
-
-	    public $permissionsPolicyHeader = 'interest-cohort=()';
-
-	    /**
-	     * @var string|null The maximum amount of memory Craft will try to reserve during memory-intensive operations such as zipping,
-	     * unzipping and updating. Defaults to an empty string, which means it will use as much memory as it can.
-	     *
-	     * See <https://php.net/manual/en/faq.using.php#faq.using.shorthandbytes> for a list of acceptable values.
-	     *
-	     * @group System
-	     */
-     }
 	</body>
 </html>
