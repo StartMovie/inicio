@@ -4,7 +4,7 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	font-family: 
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 body {
@@ -23,7 +23,6 @@ body {
 	/*border-radius: 50%;*/
 	text-align: center;
 	cursor: pointer;
-	transition: .5s;
 }
 
 .content-all .btn i {
